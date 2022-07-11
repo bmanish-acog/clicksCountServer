@@ -1,0 +1,13 @@
+{
+    "get_in_touch_from_homepage_banner": 11,
+    "get_in_touch_from_homepage_cta": 2,
+    "join_us_btn_from_aboutpage": 3,
+    "reach_us_link_from_contactpage": 2,
+    "apply_btn_from_data_scientist": 1,
+    "apply_btn_from_data_engineer": 0,
+    "apply_btn_from_web_developer": 0,
+    "apply_btn_from_devops": 0,
+    "apply_btn_from_bioinformatics": 0,
+    "apply_btn_from_cheminformatics": 0,
+    "apply_btn_from_lead_sol_architect": 1
+}
