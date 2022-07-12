@@ -11,10 +11,11 @@ const corsOptions ={
 }
 
 app.use(cors(corsOptions))
-app.use(express.json({ strict: false }));
+app.use(express.json({ extended: false }));
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
+  res.header("Content-Type",'application/json');
   res.json({
     message: "This is an API to count the respective no. of clicks on buttons",
   });
@@ -31,9 +32,8 @@ app.post("/json", (req, res) => {
             return;
         }
 
-        // let fileData = JSON.parse(data);
-        let stringified = JSON.stringify(data);
-        let fileData = JSON.parse(stringified);
+        let fileData = JSON.parse(data);
+
 
           id === "banner" ? fileData.get_in_touch_from_homepage_banner += 1
         : id === "cta" ? fileData.get_in_touch_from_homepage_cta += 1
