@@ -31,7 +31,9 @@ app.post("/json", (req, res) => {
             return;
         }
 
-        let fileData = JSON.parse(data);
+        // let fileData = JSON.parse(data);
+        let stringified = JSON.stringify(data);
+        let fileData = JSON.parse(stringified);
 
           id === "banner" ? fileData.get_in_touch_from_homepage_banner += 1
         : id === "cta" ? fileData.get_in_touch_from_homepage_cta += 1
